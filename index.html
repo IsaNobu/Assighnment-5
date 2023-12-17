@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .h-481 {
+          height: 481px;
+        }
+        .font {
+          font-family: "Caveat", cursive;
+        }
+        .pt-138 {
+          padding-top: 138px;
+        }
+        .py-1219 {
+          padding-left: 1219px;
+        }
+        .w-250 {
+          width: 250px;
+        }
+        .rotate-20 {
+          transform: rotate(20deg);
+        }
+        .rotate--20 {
+          transform: rotate(-20deg);
+        }
+        .ml-1600 {
+          margin-left: 1600px;
+        }
+        .w-card {
+          width: 264px;
+        }
+        .h-card {
+          height: 371px;
+        }
+        .btn-card-w {
+          width: 221px;
+        }
+        .btn-card-h {
+          height: 42px;
+        }
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-900">
+    <header>
+      <section class="bg-black w-auto h-481">
+        <img
+          class="absolute w-250 rotate-20 mt-24"
+          src="Images/Decoration/Pawn.png"
+          alt="Pawn"
+        />
+        <img
+          class="w-250 rotate--20 mt-24 ml-1600 absolute"
+          src="Images/Decoration/Knight.png"
+          alt="Knight"
+        />
+        <h1 class="text-orange-500 font text-6xl text-center pt-138">
+          Most Talented Chess Players
+        </h1>
+        <img
+          class="py-1219 mt-2"
+          src="Images/Decoration/Line Marker.png"
+          alt="Line"
+        />
+        <p class="text-white w-8/12 mx-auto text-center mt-14">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+          nulla illum cupiditate debitis? Voluptatibus possimus aspernatur
+          veritatis ea sit, unde, laborum facilis non, reiciendis sed porro
+          mollitia voluptate autem odio voluptates laudantium! Officiis
+          voluptas, iusto provident debitis voluptatibus cumque consectetur
+          tempora consequatur maxime officia, reprehenderit sapiente, illo ad
+          exercitationem deleniti.
+        </p>
+      </section>
+    </header>
+    <div class="flex flex-nowrap mt-6">
+      <main>
+        <section class="grid grid-cols-3 gap-5 mx-80">
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Aliraza.png" alt="Aliraza" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Alireza Firouzja</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2727</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Bobby.png" alt="Bobbt" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Bobby Fisher</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2785</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Hikaru.png" alt="Hikaru" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Hikaru Nakamura</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2788</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Karpov.png" alt="Karpov" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Anatoly Karpov</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2780</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Kasparov.png" alt="Garry" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Garry Kasparov</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2851</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Magnus.png" alt="Magnus" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Magnus Carlsen</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2881</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Mikhail.png" alt="Mikhail" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Mikhail Tal</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2705</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/So_Wesley.png" alt="Wesley" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">So Wesley</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2818</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+          <section class="bg-black w-card h-card mt-6">
+            <img src="Images/Vishanath.png" alt="Vishanath" />
+            <section class="text-center mt-7">
+              <h1 class="text-white">Vishanath Anand</h1>
+              <h3 class="text-gray-400 mt-3">Elo - 2751</h3>
+              <button
+                class="text-white text-xl mt-4 bg-sky-800 btn-card-w btn-card-h rounded hover:bg-neutral-400"
+              >
+                Select
+              </button>
+            </section>
+          </section>
+        </section>
+      </main>
+      <article>
+        <div class="bg-black">
+          <section>
+            <h1 class="text-2xl text-white">Selected - V</h1>
+            <img src="Images/Decoration/Line.png" alt="Line" />
+          </section>
+        </div>
+      </article>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
