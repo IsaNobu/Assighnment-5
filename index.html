@@ -233,10 +233,12 @@
           <section class="mt-6">
             <h1 class="text-gray-400 inline mr-3 ml-5">Per Player :</h1>
             <input
+              id="person-value"
               class="w-28 h-5 border-2 border-white bg-black text-white"
               type="text"
             />
             <button
+              id="cal"
               class="text-white mt-5 bg-cyan-600 w-221 h-42 rounded ml-5 hover:bg-cyan-900"
             >
               Calculate
@@ -244,31 +246,37 @@
           </section>
           <section>
             <h1 class="mt-9 text-gray-400 ml-5">
-              Player Expenses: $<span>00</span>
+              Player Expenses: $<span id="expenses">00</span>
             </h1>
             <h1 class="text-gray-400 inline mr-3 ml-5 mt-4">Manager :</h1>
             <input
+              id="mgn-field"
               class="w-28 h-5 border-2 border-white bg-black text-white mt-4"
               type="text"
             />
 
             <h1 class="text-gray-400 inline mr-8 ml-5 mt-4">Coach :</h1>
             <input
+              id="Coach-field"
               class="w-28 h-5 border-2 border-white bg-black text-white mt-4"
               type="text"
             />
             <button
+              id="cal-total"
               class="text-white mt-8 bg-cyan-600 w-221 h-42 rounded ml-5 hover:bg-cyan-900"
             >
               Calculate Total
             </button>
             <h1 class="text- text-white text-2xl mt-9 ml-5">
-              Total : <span class="text-orange-500">$<span>00</span></span>
+              Total :
+              <span class="text-orange-500"
+                >$<span id="final-total">00</span></span
+              >
             </h1>
           </section>
         </div>
       </article>
     </div>
-    <script src="java.js"></script>
+    <script src="java Files/budget.js"></script>
   </body>
 </html>
