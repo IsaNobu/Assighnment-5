@@ -9,7 +9,702 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Fonts/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar bg-base-100 flex justify-around mt-4">
+          <div>
+            <div class="dropdown lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a class="text-red-color">Home</a></li>
+                <li><a>About</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Destination</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <h1 class="raleway text-2xl font-extrabold lg:text-4xl">
+              P-Ticket
+            </h1>
+          </div>
+          <div class="hidden lg:block space-x-11">
+            <a class="text-red-color" href="">Home</a>
+            <a href="">About</a>
+            <a href="">Pages</a>
+            <a href="">Destination</a>
+            <a href="">Contact</a>
+          </div>
+          <div>
+            <button
+              class="lg:inline-flex lg:items-center hidden py-3 px-7 hover:bg-green-200 font-bold text-xl rounded-xl gap-2 bg-[#1dd1001a] text-[#1DD100] border-2 border-[#1DD100]"
+            >
+              Bus
+              <img src="images/bus-icon.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="mt-10 relative">
+          <div>
+            <img class="mx-auto" src="images/banner.png" alt="" />
+          </div>
+          <div class="absolute top-[70px] inset-x-0">
+            <h1 class="text-[64px] font-bold text-white text-center">
+              End-to-End Travel with <br />
+              <span class="text-[#1DD100]">P Paribahan</span>
+            </h1>
+            <p class="text-white text-center mt-[15px]">
+              To get to you're destination safe and soundly, hop on our bus and
+              you'll be there. <br />
+              Get you're sit with the best price and you're desired sit.
+            </p>
+            <div class="text-center mt-8">
+              <button
+                id="buyNow-ticket"
+                class="px-7 py-5 bg-[#1DD100] rounded-xl font-bold hover:text-white"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Coupon section -->
+      <section>
+        <div class="mt-28">
+          <h1 class="font-bold text-[40px] text-center">Best offers for you</h1>
+        </div>
+        <div class="mt-10 flex justify-center gap-6">
+          <div class="flex justify-center">
+            <div class="bg-[#FFBF0F] px-14 rounded-l-3xl">
+              <h1 class="text-[40px] font-extrabold mt-14">15% OFF</h1>
+              <p class="text-2xl font-semibold">on your next purchase</p>
+              <p class="text-[18px] text-[#03071280]">use by January 2024</p>
+            </div>
+            <div class="bg-[#FFBF0F]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="220"
+                viewBox="0 0 48 220"
+                fill="none"
+              >
+                <path
+                  d="M2.09815e-06 -3.81596e-07C1.82261e-06 3.15172 0.620775 6.27259 1.82689 9.1844C3.033 12.0962 4.80083 14.742 7.02943 16.9706C9.25804 19.1992 11.9038 20.967 14.8156 22.1731C17.7274 23.3792 20.8483 24 24 24C27.1517 24 30.2726 23.3792 33.1844 22.1731C36.0962 20.967 38.742 19.1992 40.9706 16.9706C43.1992 14.742 44.967 12.0962 46.1731 9.1844C47.3792 6.27259 48 3.15173 48 1.90735e-06L2.09815e-06 -3.81596e-07Z"
+                  fill="white"
+                />
+                <path
+                  d="M48 220C48 216.848 47.3792 213.727 46.1731 210.815C44.967 207.904 43.1992 205.258 40.9706 203.029C38.742 200.801 36.0962 199.033 33.1844 197.827C30.2726 196.621 27.1517 196 24 196C20.8483 196 17.7274 196.621 14.8156 197.827C11.9038 199.033 9.25804 200.801 7.02944 203.029C4.80083 205.258 3.033 207.904 1.82689 210.815C0.620778 213.727 -2.75532e-07 216.848 0 220L48 220Z"
+                  fill="white"
+                />
+                <line
+                  x1="25"
+                  y1="32"
+                  x2="25"
+                  y2="188"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-dasharray="5 5"
+                />
+              </svg>
+            </div>
+            <div class="bg-[#FFBF0F] px-14 rounded-r-3xl">
+              <h1 class="text-3xl raleway mt-20">NEW15</h1>
+              <p class="text-[#03071266]">Coupon Code</p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="bg-[#F78C9C] px-14 rounded-l-3xl">
+              <h1 class="text-[40px] font-extrabold mt-14">20% OFF</h1>
+              <p class="text-2xl font-semibold">on your next purchase</p>
+              <p class="text-[18px] text-[#03071280]">use by January 2024</p>
+            </div>
+            <div class="bg-[#F78C9C]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="220"
+                viewBox="0 0 48 220"
+                fill="none"
+              >
+                <path
+                  d="M2.09815e-06 -3.81596e-07C1.82261e-06 3.15172 0.620775 6.27259 1.82689 9.1844C3.033 12.0962 4.80083 14.742 7.02943 16.9706C9.25804 19.1992 11.9038 20.967 14.8156 22.1731C17.7274 23.3792 20.8483 24 24 24C27.1517 24 30.2726 23.3792 33.1844 22.1731C36.0962 20.967 38.742 19.1992 40.9706 16.9706C43.1992 14.742 44.967 12.0962 46.1731 9.1844C47.3792 6.27259 48 3.15173 48 1.90735e-06L2.09815e-06 -3.81596e-07Z"
+                  fill="white"
+                />
+                <path
+                  d="M48 220C48 216.848 47.3792 213.727 46.1731 210.815C44.967 207.904 43.1992 205.258 40.9706 203.029C38.742 200.801 36.0962 199.033 33.1844 197.827C30.2726 196.621 27.1517 196 24 196C20.8483 196 17.7274 196.621 14.8156 197.827C11.9038 199.033 9.25804 200.801 7.02944 203.029C4.80083 205.258 3.033 207.904 1.82689 210.815C0.620778 213.727 -2.75532e-07 216.848 0 220L48 220Z"
+                  fill="white"
+                />
+                <line
+                  x1="25"
+                  y1="32"
+                  x2="25"
+                  y2="188"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-dasharray="5 5"
+                />
+              </svg>
+            </div>
+            <div class="bg-[#F78C9C] px-14 rounded-r-3xl">
+              <h1 class="text-3xl raleway mt-20">Couple 20</h1>
+              <p class="text-[#03071266]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto text-center mt-[61px]">
+          <button
+            class="lg:inline-flex lg:items-center hidden py-3 px-7 hover:bg-green-200 font-bold text-xl rounded-xl gap-2 text-[#1DD100] border-2 border-[#1DD100]"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <section
+        class="border-t-2 border-[#1DD100] rounded-t-[88px] mt-32 pb-32 bg-[#F7F8F8]"
+      >
+        <section class="w-[1170px] mx-auto">
+          <div class="mt-28">
+            <h1 class="font-bold text-[40px] text-center">P.H Paribahan</h1>
+            <p class="text-center text-[#03071299]">
+              buy you're tickets here without a worry about getting scam because
+              we only let <br />
+              our customer buy four tickets at a time
+            </p>
+          </div>
+          <div class="flex justify-center mt-12 bg-white rounded-2xl">
+            <div class="px-8 py-2">
+              <div class="flex gap-[233px]">
+                <div class="flex gap-4 items-center">
+                  <div>
+                    <img src="images/bus-logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h1 class="text-[32px] font-bold">Greenline Paribahan</h1>
+                    <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="inline-flex gap-2 text-[#1DD100] font-semibold bg-[#1DD10026] px-4 py-3 rounded-xl"
+                  >
+                    <img src="images/seat-green-filled.png" alt="" />
+                    <span><span>40</span> Seats left</span>
+                  </button>
+                </div>
+              </div>
+              <div class="bg-[#F7F8F8] space-y-6 p-8 mt-4">
+                <div class="flex justify-between">
+                  <h3 class="text-[#03071299]">Route</h3>
+                  <p class="font-semibold">Dhaka - Sylhet</p>
+                </div>
+                <hr class="w-[95%] mx-auto text-center" />
+                <div class="flex justify-between">
+                  <h3 class="text-[#03071299]">Departure Time</h3>
+                  <p class="font-semibold">9:00 PM</p>
+                </div>
+                <hr class="w-[95%] mx-auto text-center" />
+                <div class="flex justify-center gap-6 mt-4">
+                  <div class="bg-[#0307120D] px-12 py-2 rounded-lg">
+                    <p>Boarding Point - Laxmipur</p>
+                  </div>
+                  <div class="bg-[#0307120D] px-12 py-2 rounded-lg">
+                    <p>Dropping Point - Bogura</p>
+                  </div>
+                  <div class="bg-[#0307120D] px-12 py-2 rounded-lg">
+                    <p>Est. Time - 11 Hour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <img src="images/info-devider.png" alt="" />
+            </div>
+            <div class="py-8 px-16 flex flex-col justify-center rounded-r-3xl">
+              <img src="images/fare.png" class="w-12 h-12" />
+              <h1 class="text-[32px] font-bold">550 Taka</h1>
+              <p class="text-2xl">Per Seat</p>
+            </div>
+          </div>
+        </section>
+        <section class="w-[1170px] mx-auto mt-6 bg-white rounded-xl">
+          <div class="flex">
+            <div class="w-[673px] p-8">
+              <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+              <hr class="mx-auto text-center mt-6" />
+              <div class="flex justify-between">
+                <div class="flex items-center gap-2 mt-6">
+                  <img src="images/seat-gray.png" alt="" />
+                  <h3>Available</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="images/seat-green-filled.png" alt="" />
+                  <h3 class="text-[#1DD100]">Selected</h3>
+                </div>
+              </div>
+              <hr class="mx-auto text-center mt-6" />
+              <div class="">
+                <img
+                  class="bg-[#0307121A] px-10 py-3 rounded-xl mt-6 float-right"
+                  src="images/tabler-icon-steering-wheel.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-24">
+                <div class="flex gap-6 items-center">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      A
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      A1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      A2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-5"
+                    >
+                      A3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      A4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      B
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      B1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      B2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-5"
+                    >
+                      B3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      B4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      C
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      C1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      C2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-5"
+                    >
+                      C3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      C4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      D
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      D1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      D2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-3"
+                    >
+                      D3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      D4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      E
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      E1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      E2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-7"
+                    >
+                      E3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      E4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      F
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      F1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      F2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-7"
+                    >
+                      F3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      F4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      G
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      G1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      G2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-3"
+                    >
+                      G3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      G4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      H
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      H1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      H2
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-2"
+                    >
+                      H3
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      H4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      I
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      I1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      I2
+                    </h2>
+                    <h2
+                      class="seat-selector px-14 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-5"
+                    >
+                      I3
+                    </h2>
+                    <h2
+                      class="seat-selector px-14 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      I4
+                    </h2>
+                  </div>
+                </div>
+                <div class="flex gap-6 items-center mt-6">
+                  <div>
+                    <h2 class="font-semibold text-[18px] text-[#03071280]">
+                      J
+                    </h2>
+                  </div>
+                  <div class="flex gap-7">
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      J1
+                    </h2>
+                    <h2
+                      class="seat-selector px-12 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      J2
+                    </h2>
+                    <h2
+                      class="seat-selector px-14 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl ml-5"
+                    >
+                      J3
+                    </h2>
+                    <h2
+                      class="seat-selector px-14 py-4 text-center bg-[#F7F8F8] text-[18px] font-semibold rounded-xl"
+                    >
+                      J4
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-[497px] p-8">
+              <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+              <hr class="mx-auto text-center mt-6" />
+              <div class="w-[433px] bg-[#F7F8F8] mt-6 rounded-xl p-8">
+                <div class="flex justify-around">
+                  <p>
+                    Seat
+                    <span
+                      id="seat-num"
+                      class="bg-[#1DD100] px-2 text-white rounded-3xl"
+                      >0</span
+                    >
+                  </p>
+                  <p>Class</p>
+                  <p>Price</p>
+                </div>
+                <hr class="mx-auto text-center mt-4" />
+                <div
+                  id="added-seats"
+                  class="flex justify-around text-[#03071299] space-y-4"
+                ></div>
+                <hr class="mx-auto text-center mt-6" />
+                <div class="text-base flex justify-between mt-4">
+                  <h3>Total Price</h3>
+                  <h3>BDT <span id="total-price">0</span></h3>
+                </div>
+                <div class="mt-4">
+                  <label
+                    id="coupon-input"
+                    class="input input-bordered flex items-center gap-2"
+                  >
+                    <input
+                      type="text"
+                      class="grow"
+                      placeholder="Have any coupon?"
+                    />
+                    <button
+                      id="coupon-btn"
+                      class="badge badge-info text-white bg-[#1DD100] px-5 py-4"
+                    >
+                      Apply
+                    </button>
+                  </label>
+                </div>
+                <div class="flex justify-between text-black mt-4">
+                  <h3>Grand Total</h3>
+                  <h3>BDT <span id="grand-total">0</span></h3>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="font-semibold text-black mt-6">Passenger Name*</h3>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input input-bordered w-full h-[64px] mt-4"
+                />
+                <h3 class="font-semibold text-black mt-4">Phone Number*</h3>
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  class="input input-bordered w-full h-[64px] mt-4"
+                />
+                <h3 class="font-semibold text-black mt-4">Email ID</h3>
+                <input
+                  type="text"
+                  placeholder="Enter your email id"
+                  class="input input-bordered w-full h-[64px] mt-4"
+                />
+              </div>
+              <div class="mt-4">
+                <button
+                  id="confirmation-btn"
+                  class="bg-[#7f9a7a] w-full py-5 rounded-2xl text-white text-xl"
+                  disabled
+                >
+                  Next
+                </button>
+              </div>
+              <div
+                class="flex justify-between mt-6 underline underline-offset-4"
+              >
+                <h3>Terms and Conditions</h3>
+                <h3>Cancellation Policy</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer footer-center p-10 bg-black text-primary-content">
+      <aside>
+        <h1 class="text-3xl">P-Ticket</h1>
+        <p class="font-bold">
+          P-Ticket is a digital platform to make your daily commuting better.
+        </p>
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path></svg
+          ></a>
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>
