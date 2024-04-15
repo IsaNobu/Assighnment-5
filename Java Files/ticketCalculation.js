@@ -27,9 +27,11 @@ for (const elements of getSeats) {
     createNewDiv.appendChild(class_);
     createNewDiv.appendChild(price);
 
-    if (clickCount < 4) {
+    if (clickCount < 4 && !elements.classList.contains("clicked")) {
+      elements.classList.add("clicked");
+
       // give background color to the selected seat
-      event.target.classList.add("bg-lime-500");
+      event.target.classList.add("bg-green-500");
       clickCount++;
 
       // increase the seat number
@@ -42,12 +44,18 @@ for (const elements of getSeats) {
       getSeatInfoDiv.appendChild(createNewDiv);
 
       // get total price of seats
+      const getGrandPrice = getGrandTotalPrice.innerText;
+      const makeGrandPriceInt = parseInt(getGrandPrice);
+
       const getPrice = getTotalPrice.innerText;
       const makePriceInt = parseInt(getPrice);
 
       getTotalPrice.innerText = makePriceInt + 550;
+      getGrandTotalPrice.innerText = makeGrandPriceInt + 550;
     } else {
-      alert("You can't select more than four seats at a time");
+      alert(
+        "You can't select more than four seats at a time nor same seat if it's not available"
+      );
     }
   });
 }
